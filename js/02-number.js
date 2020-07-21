@@ -5,6 +5,7 @@
 let elementWidth = '50px';
 // elementWidth = Number.parseInt(elementWidth);
 // console.log('elementWidth: ', elementWidth);
+// console.log(typeof elementWidth);
 
 let elementHeight = '200.74px';
 // elementHeight = Number.parseFloat(elementHeight);
@@ -16,8 +17,9 @@ let elementHeight = '200.74px';
  */
 let salary = 1300.16472;
 // salary = Number(salary.toFixed(2));
-
 // console.log(salary);
+
+// console.log(Number(salary.toFixed(2)));
 
 /*
  * - Приведение (преобразование) к числу с Number(value)
