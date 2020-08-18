@@ -8,20 +8,32 @@
 как свойства объекта в формате "имя":"кол-во задач".
  */
 
+// const keys = Object.keys(employees);
+// for (const key of keys) {
+//   console.log(key);
+// }
+
 const findBestEmployee = function (employees) {
   // 'use strict';
   // Write code under this line
-  //   const values = Object.values(employees);
-  const keys = Object.keys(employees);
-  for (const key of keys) {
-    console.log(key);
-    const bigValues = Math.max(...key);
-    console.log(bigValues);
-  }
-  //   const bigValues = Math.max(...values);
-  //   console.log(bigValues);
-};
+  // let keyName = '';
+  let keyName = '';
+  const values = Object.values(employees);
 
+  const bigValues = Math.max(...values);
+  //   console.log(bigValues);
+
+  //const keys = Object.values(employees);
+  for (const key in employees) {
+    //console.log(`${key}`);
+    //console.log(`${employees[key]}`)
+
+    if (employees[key] === bigValues) {
+      keyName = `${key}`;
+    }
+  }
+  return keyName;
+};
 // Объекты и ожидаемый результат
 const developers = {
   ann: 29,
@@ -37,7 +49,7 @@ const supports = {
   mango: 17,
   ajax: 4,
 };
-console.log(findBestEmployee(supports));
+// console.log(findBestEmployee(supports));
 // 'mango'
 
 const sellers = {
@@ -46,5 +58,5 @@ const sellers = {
   kiwi: 19,
   chelsy: 38,
 };
-console.log(findBestEmployee(sellers));
+// console.log(findBestEmployee(sellers));
 // 'lux'
