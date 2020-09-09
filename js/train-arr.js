@@ -26,3 +26,26 @@
 //   str += `-${el}`;
 // }
 // console.log(str);
+
+//Filling an array (part 1)
+// const arr = N => (N ? [...Array(N).keys()] : []);
+// console.log(arr(4));
+
+// Get the mean of an array (codewars)
+const arr = [2, 5, 13, 20, 16, 16, 10];
+
+function getAverage(marks) {
+  let num = 0;
+  let newNUm = 0;
+  for (let i = 0; i < marks.length; i += 1) {
+    const el = marks[i];
+    // let ind = i + 1;
+    num += el;
+    newNUm = num / (i + 1);
+  }
+  return Math.floor(newNUm);
+}
+console.log(getAverage(arr));
+// Test.assertEquals(getAverage([2, 2, 2, 2]), 2);
+// Test.assertEquals(getAverage([1, 2, 3, 4, 5]), 3);
+// Test.assertEquals(getAverage([1, 1, 1, 1, 1, 1, 1, 2]), 1);
