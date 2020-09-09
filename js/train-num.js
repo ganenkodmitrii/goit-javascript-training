@@ -23,18 +23,18 @@ console.log(minNum);
 // Test.assertSimilar(isDivideBy(15, -5, 3), true);
 
 // Dashatize it
-function dashatize(num) {
-  let newNum = String(num).split('');
-  let arr = [];
-  for (const el of newNum) {
-    // console.log(el);
-    if (el % 2 === 0) {
-      arr.push(el);
-      console.log(arr);
-    }
-  }
-  // return newNum.join('-');
-}
+// function dashatize(num) {
+//   let newNum = String(num).split('');
+//   let arr = [];
+//   for (const el of newNum) {
+//     // console.log(el);
+//     if (el % 2 === 0) {
+//       arr.push(el);
+//       console.log(arr);
+//     }
+//   }
+//   // return newNum.join('-');
+// }
 
-console.log(dashatize(274));
-console.log(dashatize(6815));
+// console.log(dashatize(274));
+// console.log(dashatize(6815));
