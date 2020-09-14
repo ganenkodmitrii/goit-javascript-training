@@ -65,3 +65,39 @@
 // console.log(solve('CODe')); //"CODE"
 // console.log(solve('COde')); //"code"
 // console.log(solve('Code')); //"code"
+
+// function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
+
+//   if (dolphin) {
+//     sharkSpeed /= 2;
+//   }
+
+//   if (sharkDistance / sharkSpeed >= pontoonDistance / youSpeed) {
+//     return 'Alive!';
+//   } else {
+//     return 'Shark Bait!';
+//   }
+// }
+//pontoonDistance - растояние
+// sharkDistance - растояние акулы
+//youSpeed - скорость жертвы
+// sharkSpeed - cкорость акулы
+//dolphin - просто дельфин - если 'true' - то скор
+
+// console.log(shark(12, 50, 4, 8, true)); // "Alive!");
+// Test.assertEquals(shark(7, 55, 4, 16, true), "Alive!");
+// console.log(shark(24, 0, 4, 8, true)); //"Shark Bait!");
+
+//Testing 1-2-3
+// const number = array =>
+//   array.map((element, index) => `${index + 1}: ${element}`);
+// const number = function (array) {
+//   let newArr = [];
+//   for (let i = 0; i < array.length; i += 1) {
+//     const element = array[i];
+//     newArr.push(`${i + 1}: ${element}`);
+//   }
+//   return newArr;
+// };
+// console.log(number([])); // []
+// console.log(number(['a', 'b', 'c'])); // ['1: a', '2: b', '3: c'],
